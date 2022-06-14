@@ -2,13 +2,12 @@ package com.todolist.app.todoApp.controller;
 
 import com.todolist.app.todoApp.entity.TodoItem;
 import com.todolist.app.todoApp.service.TodoService;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/todolist")
 public class TodoController {
     private TodoService todoService;
